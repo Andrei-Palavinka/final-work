@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/logo/symbol_favicon.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+	<title>Crypter</title>
+</head>
+<body>
+	<div class="main_container">
+		<header class="header">
+			<div class="header-container">
+				<a class="header-logo" href="./index.html">
+					<img class="logo-img" src="./img/logo/logo.svg" alt="crypter">
+				</a>
+
+				<div class="desctop-container">
+					<ul class="menu-desctop">
+						<li class="menu-desctop-link">Discover</li>
+						<li class="menu-desctop-link">How it work</li>
+					</ul>
+				</div>
+	
+				<nav class="burger-menu">
+					<input id="menu-toggle" type="checkbox" />
+					<label class="menu-btn" for="menu-toggle">
+						<span></span>
+					</label>
+
+					<div class="menu-container">
+						<ul class="menubox">
+										<li><a class="menu-item" href="#">Discover</a></li>
+										<li><a class="menu-item" href="#">How it works</a></li>
+										<li><a class="menu-item" href="#">Create item</a></li>
+										<li><a class="menu-item" href="#">Profile</a></li>
+						</ul>
+							
+						<div class="header__container-button">
+							<form class="header__search">
+								<input class="header__input" type="text" name="search" placeholder="Search" required>	
+								
+								<button class="icon-search">
+									<img class="search_icon" src="./img/icon_svg/Line.svg">
+								</button>
+								
+							</form>
+							
+							<div class="d-grid gap-2 buttons-header-menu">
+								<button class="btn btn-primary" type="button">Upload</button>
+
+								<button type="button" class="btn btn-outline-primary">Connect Wallet</button>
+							</div>
+						</div>
+					</div>			 
+				</nav>
+			</div>
+			
+		</header>
+		<section class="section-title">
+			<div class="title-container">
+				<h3 class="title title-small">Create, explore, & collect digital art NFTs.</h3>
+				<h1 class="title title-main">The new creative economy.</h1>
+				<button type="button" class="btn btn-start-search">Start your search</button>
+			</div>
+		</section>
+
+		<section class="section-auction">
+			<div class="player">
+				<div class="player__preview">
+					<img class="player__img" src="./img/player/main.jpg" alt="Video preview">
+					<div class="player__control">
+						<button class="player__button">
+							<img class="icon icon-play" src="./img/player/play.svg" alt="play"></img>
+						</button>
+	
+						<div class="player__line">
+							<div class="player__progress"></div>
+						</div>
+	
+						<div class="player__time">2:20</div>
+	
+						<button class="player__button">
+							<img class="icon icon-volume" src="./img/player/volume.svg" alt="volume"></img>
+						</button>
+	
+						<button class="player__button">
+							<img class="icon icon-full-screen" src="./img/player/full_screen.svg" alt="full_screen"></img>
+						</button>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="cretor-container">
+				<div class="creator">
+					<h2 class="title__creator">the creator network®</h2>
+	
+					<div class="creator-author">
+						<div class="creator-item">
+							<div class="user-avatar">
+								<img class="" src="./img/avatar/avatar-austin.png" alt="Avatar">
+							</div>
+							
+							<div class="user-description">
+								<div class="user-category">Creator</div>
+								<div class="user-text">Enrico Cole</div>
+							</div>
+						</div>
+						
+						<div class="creator-item">
+							<div class="user-avatar">
+								<img class="" src="./img/avatar/user-green.png" alt="Avatar">
+							</div>
+							
+							<div class="user-description">
+								<div class="user-category">Instant price</div>
+								<div class="user-text">3.5 ETH</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<div class="price-container">
+					<div class="current-bid">
+						<p class="bid">Current Bid</p>
+						<p class="current-item">1.00 ETH</p>
+						<p class="current-price">$3,618.36</p>
+					</div>
+	
+					<h3 class="title title-auction">Auction ending in</h3>
+	
+					<div class="auction-timer">
+						<div class="timer timer__hrs">
+							<p class="value-time">19</p>
+							<p class="atibut_time">Hrs</p>
+						</div>
+	
+						<div class="timer timer__mins">
+							<p class="value-time">24</p>
+							<p class="atibut_time">mins</p>
+						</div>
+	
+						<div class="timer timer__secs">
+							<p class="value-time">19</p>
+							<p class="atibut_time">secs</p>
+						</div>
+					</div>
+				</div>
+						
+				<div class="button-creator">
+					<div class="d-grid gap-2 buttons-header-menu button-placebid">
+						<button class="btn btn-primary" type="button">Place a bid</button>
+	
+						<button type="button" class="btn btn-outline-primary">View item</button>
+					</div>
+				</div>
+	
+				<div class="button-slider-container">
+					<button class="button-arrow arrow-left">
+						<img class="arrow-img" src="./img/icon_svg/arrow_left.svg" alt="left">
+					</button>
+
+					<button class="button-arrow arrow-right">
+						<img class="arrow-img" src="./img/icon_svg/arrow_right.svg" alt="right">
+					</button>
+				</div>
+			</div>
+
+			</div>
+			
+
+		</section>
+
+		<section class="section-selection">
+			<div class="selection-preview">
+				<img class="selection-img" src="./img/selection.jpg" alt="img">
+			</div>
+			
+			<div class="selection__head">
+				<div class="selection__line">
+					<div class="selection__avatar">
+						<img src="./img/avatar/avatar-austin.png" alt="Avatar">
+					</div>
+					<div class="selection__description">
+						<div class="selection__title">The future of ETH®</div>
+						<div class="selection__counter">18 in stock</div>
+					</div>
+				</div>
+				<div class="selection__box">
+					<div class="selection__content">Highest bid</div>
+					<div class="selection__price">1.125 ETH</div>
+				</div>
+			</div>
+
+			<hr class="selection__hr">
+
+			<div class="selection__sidebar">
+				<p class="selection__info">Latest upload from creators <span role="img" aria-label="fire">🔥</span>
+				</p>
+
+				<div class="selection__list">
+					<div class="selection__user">
+						<div class="selection__avatar">
+							<img src="./img/avatar/avatar-austin.png" alt="Avatar">
+							<div class="selection__number">6</div>
+						</div>
+						<div class="selection__description">
+							<div class="selection__name">Payton Harris</div>
+							<div class="selection__price-grey"><span>2.456</span> ETH</div>
+						</div>
+					</div>
+					<div class="selection__user">
+						<div class="selection__avatar">
+							<img src="./img/avatar/avatar-austin.png" alt="Avatar">
+							<div class="selection__number">2</div>
+						</div>
+						<div class="selection__description">
+							<div class="selection__name">Anita Bins</div>
+							<div class="selection__price-grey"><span>2.456</span> ETH</div>
+						</div>
+					</div>
+					<div class="selection__user">
+						<div class="selection__avatar">
+							<img src="./img/avatar/avatar-austin.png" alt="Avatar">
+							<div class="selection__number">3</div>
+						</div>
+						<div class="selection__description">
+							<div class="selection__name">Joana Wuckert</div>
+							<div class="selection__price-grey"><span>2.456</span> ETH</div>
+						</div>
+					</div>
+					<div class="selection__user">
+						<div class="selection__avatar">
+							<img src="./img/avatar/avatar-austin.png" alt="Avatar">
+							<div class="selection__number">4</div>
+						</div>
+
+						<div class="selection__description">
+							<div class="selection__name">Lorena Ledner</div>
+							<div class="selection__price-grey"><span>2.456</span> ETH</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-popular">
+			<div class="popular__top">
+				<div class="popular__box">
+					<div class="popular__stage">Popular</div>
+
+					<select class="select-sellers">
+						<option>Sellers</option>
+						<option>Buyers</option>
+					</select>
+				</div>
+
+				<div class="field">
+					<div class="field__label">timeframe</div>
+					
+					<div class="field__wrap">
+						<select class="select">
+							<option>Today</option>
+							<option>Morning</option>
+							<option>Dinner</option>
+							<option>Evening</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<section class="section-hot-bid"></section>
+
+		<section class="section-hot-collections"></section>
+
+		<section class="section-discover"></section>
+
+		<section class="section-description">
+			<div class="description__container">
+				<div class="description__content">
+					<p class="description__stage">Save your time with Stacks</p>
+
+					<h2 class="description__title">Earn free crypto with Crypter</h2>
+
+					<p class="description__text">A creative agency that lead and inspire</p>
+				</div>
+
+				<div class="d-grid gap-2 description__btns button-placebid">
+					<button class="btn btn-primary" type="button">Earn now</button>
+
+					<button type="button" class="btn btn-outline-primary">Discover more</button>
+				</div>
+
+				<div class="description__img-wrap">
+					<img class="description__img" src="./img/description.jpg" alt="image">
+				</div>
+				
+
+				</div>
+			</div>
+		</section>
+		<footer class="footer"></footer>
+	</div>
+	
+</body>
+</html>

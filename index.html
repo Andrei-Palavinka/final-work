@@ -13,7 +13,7 @@
 	<title>Crypter</title>
 </head>
 <body>
-	<div class="main_container">
+	<div class="main_wrapper">
 		<header class="header">
 			<div class="header-container">
 				<a class="header-logo" href="./index.html">
@@ -22,13 +22,31 @@
 
 				<div class="desctop-container">
 					<ul class="menu-desctop">
-						<li class="menu-desctop-link">Discover</li>
-						<li class="menu-desctop-link">How it work</li>
+						<li class="menu-desctop-link"><a href="#">Discover</a></li>
+						<li class="menu-desctop-link"><a href="#">How it work</a></li>
 					</ul>
+
+					<div class="desctop-button-menu">
+						<form class="header__search-desctop">
+							<input class="header__input" type="text" name="search" placeholder="Search" required>	
+							
+							<button class="icon-search">
+								<img class="search_icon" src="./img/icon_svg/Line.svg" alt="search">
+							</button>
+						</form>
+
+						<div class="bell-container">
+							<img class="bi-bell" src="./img/icon_svg/bell.svg" alt="bell">
+						</div>
+
+						<button class="btn btn-primary" type="button">Upload</button>
+
+						<button type="button" class="btn btn-outline-primary">Connect Wallet</button>
+					</div>
 				</div>
 	
 				<nav class="burger-menu">
-					<input id="menu-toggle" type="checkbox" />
+					<input id="menu-toggle" type="checkbox"/>
 					<label class="menu-btn" for="menu-toggle">
 						<span></span>
 					</label>
@@ -48,11 +66,10 @@
 								<button class="icon-search">
 									<img class="search_icon" src="./img/icon_svg/Line.svg">
 								</button>
-								
 							</form>
 							
 							<div class="d-grid gap-2 buttons-header-menu">
-								<button class="btn btn-primary" type="button">Upload</button>
+								<button type="button" class="btn btn-primary">Upload</button>
 
 								<button type="button" class="btn btn-outline-primary">Connect Wallet</button>
 							</div>
@@ -60,12 +77,14 @@
 					</div>			 
 				</nav>
 			</div>
-			
 		</header>
+
 		<section class="section-title">
 			<div class="title-container">
 				<h3 class="title title-small">Create, explore, & collect digital art NFTs.</h3>
+
 				<h1 class="title title-main">The new creative economy.</h1>
+
 				<button type="button" class="btn btn-start-search">Start your search</button>
 			</div>
 		</section>
@@ -74,6 +93,7 @@
 			<div class="player">
 				<div class="player__preview">
 					<img class="player__img" src="./img/player/main.jpg" alt="Video preview">
+
 					<div class="player__control">
 						<button class="player__button">
 							<img class="icon icon-play" src="./img/player/play.svg" alt="play"></img>
@@ -109,6 +129,7 @@
 							
 							<div class="user-description">
 								<div class="user-category">Creator</div>
+
 								<div class="user-text">Enrico Cole</div>
 							</div>
 						</div>
@@ -120,6 +141,7 @@
 							
 							<div class="user-description">
 								<div class="user-category">Instant price</div>
+
 								<div class="user-text">3.5 ETH</div>
 							</div>
 						</div>
@@ -171,34 +193,96 @@
 					</button>
 				</div>
 			</div>
-
-			</div>
-			
-
 		</section>
 
+<!-- ...............................................selection........................... -->
 		<section class="section-selection">
-			<div class="selection-preview">
-				<img class="selection-img" src="./img/selection.jpg" alt="img">
-			</div>
-			
-			<div class="selection__head">
-				<div class="selection__line">
-					<div class="selection__avatar">
-						<img src="./img/avatar/avatar-austin.png" alt="Avatar">
-					</div>
-					<div class="selection__description">
-						<div class="selection__title">The future of ETH®</div>
-						<div class="selection__counter">18 in stock</div>
-					</div>
+			<div class="selection__col1">
+				<div class="selection-preview">
+					<img class="selection-img" src="./img/selection/selection.jpg" alt="img">
 				</div>
-				<div class="selection__box">
-					<div class="selection__content">Highest bid</div>
-					<div class="selection__price">1.125 ETH</div>
+				
+				<div class="selection__head">
+					<div class="selection__line">
+						<div class="selection__avatar">
+							<img src="./img/avatar/avatar-austin.png" alt="Avatar">
+						</div>
+						<div class="selection__description">
+							<div class="selection__title">The future of ETH®</div>
+							<div class="selection__counter">18 in stock</div>
+						</div>
+					</div>
+					<div class="selection__box">
+						<div class="selection__content">Highest bid</div>
+						<div class="selection__price">1.125 ETH</div>
+					</div>
 				</div>
 			</div>
 
-			<hr class="selection__hr">
+			<div class="selection__col2">
+				<div class="selection__item">
+					<div class="selection-item-img">
+						<img class="selection-img" src="./img/selection/item1.jpg" alt="img">
+					</div>
+
+					<div class="selection-item-description">
+						<p class="item-title">ETH never die</p>
+
+						<div class="selection-item-line">
+							<div class="selection__avatar-small">
+								<img src="./img/selection/avatar/avatar1.jpg" alt="avatar">
+							</div>
+
+							<div class="selection__price">0.27 ETH</div>
+
+							<p class="one-of">1 of 12</p>
+						</div>
+
+						<button class="btn place-a-bit">Place a bid</button>
+					</div>
+				</div>
+
+				<div class="selection__item">
+					<div class="selection-item-img">
+						<img class="selection-img" src="./img/selection/item2.jpg" alt="img">
+					</div>
+					
+					<div class="selection-item-description">
+						<p class="item-title">Future coming soon</p>
+						<div class="selection-item-line">
+							<div class="selection__avatar-small">
+								<img src="./img/selection/avatar/avatar2.jpg" alt="avatar">
+							</div>
+
+							<div class="selection__price">0.27 ETH</div>
+
+							<p class="one-of">1 of 3</p>
+						</div>
+
+						<button class="btn place-a-bit">Place a bid</button>
+					</div>
+				</div>
+
+				<div class="selection__item">
+					<div class="selection-item-img">
+						<img class="selection-img" src="./img/selection/item3.jpg" alt="img">
+					</div>
+					
+					<div class="selection-item-description">
+						<p class="item-title">Elon Musk silver coin 3d print</p>
+						<div class="selection-item-line">
+							<div class="selection__avatar-small">
+								<img src="./img/selection/avatar/avatar1.jpg" alt="avatar">
+							</div>
+
+							<div class="selection__price">0.27 ETH</div>
+
+							<p class="one-of">1 of 4</p>
+						</div>
+						<button class="btn place-a-bit">Place a bid</button>
+					</div>
+				</div>
+			</div>
 
 			<div class="selection__sidebar">
 				<p class="selection__info">Latest upload from creators <span role="img" aria-label="fire">🔥</span>
@@ -207,7 +291,7 @@
 				<div class="selection__list">
 					<div class="selection__user">
 						<div class="selection__avatar">
-							<img src="./img/avatar/avatar-austin.png" alt="Avatar">
+							<img src="./img/selection/avatar/latest-avatar1.jpg" alt="Avatar">
 							<div class="selection__number">6</div>
 						</div>
 						<div class="selection__description">
@@ -217,7 +301,7 @@
 					</div>
 					<div class="selection__user">
 						<div class="selection__avatar">
-							<img src="./img/avatar/avatar-austin.png" alt="Avatar">
+							<img src="./img/selection/avatar/latest-avatar2.jpg" alt="Avatar">
 							<div class="selection__number">2</div>
 						</div>
 						<div class="selection__description">
@@ -227,7 +311,7 @@
 					</div>
 					<div class="selection__user">
 						<div class="selection__avatar">
-							<img src="./img/avatar/avatar-austin.png" alt="Avatar">
+							<img src="./img/selection/avatar/latest-avatar3.jpg" alt="Avatar">
 							<div class="selection__number">3</div>
 						</div>
 						<div class="selection__description">
@@ -237,7 +321,7 @@
 					</div>
 					<div class="selection__user">
 						<div class="selection__avatar">
-							<img src="./img/avatar/avatar-austin.png" alt="Avatar">
+							<img src="./img/selection/avatar/latest-avatar4.jpg" alt="Avatar">
 							<div class="selection__number">4</div>
 						</div>
 
@@ -249,13 +333,14 @@
 				</div>
 			</div>
 		</section>
-
+		
+<!-- ...............................................popular ....................................-->
 		<section class="section-popular">
 			<div class="popular__top">
 				<div class="popular__box">
 					<div class="popular__stage">Popular</div>
 
-					<select class="select-sellers">
+					<select class="select-sellers section__main-title">
 						<option>Sellers</option>
 						<option>Buyers</option>
 					</select>
@@ -265,7 +350,7 @@
 					<div class="field__label">timeframe</div>
 					
 					<div class="field__wrap">
-						<select class="select">
+						<select class="populare__select">
 							<option>Today</option>
 							<option>Morning</option>
 							<option>Dinner</option>
@@ -274,13 +359,970 @@
 					</div>
 				</div>
 			</div>
-			
+
+			<div class="populare__content">
+				<div class="popular__item-slide">
+					<div class="popular-item">
+						<div class="popular__head">
+							<div class="popular__rating" style="background-color:#3772FF;">
+								<div class="popular__icon">
+									<img src="./img/popular/svg/rating-cup.svg" alt="cup">
+								</div>
+
+								<div class="popular__number">#1</div>
+							</div>
+
+							<div class="popular__control">
+								<button class="popular__button">
+									<img src="./img/popular/svg/add.svg" alt="add">
+								</button>
+
+								<button class="popular__button">
+									<img src="./img/popular/svg/arrow-expand.svg" alt="arrow">
+								</button>
+							</div>
+						</div>
+
+						<div class="popular__body">
+							<div class="popular__avatar">
+								<img src="./img/popular/avatar/avatar1.jpg" alt="avatar">
+
+								<img class="popular__reward-img" src="./img/popular/avatar/Avatar-icon.svg" alt="icon">
+							</div>
+
+							<div class="popular__name">Payton Harris</div>
+							
+							<div class="popular__price">2.456 <span>ETH</span></div>
+						</div>
+					</div>
+
+					<div class="popular-item">
+						<div class="popular__head">
+							<div class="popular__rating" style="background-color: #9757D7;">
+								<div class="popular__icon">
+									<img src="./img/popular/svg/rating-donut.svg" alt="img">
+								</div>
+
+								<div class="popular__number">#2</div>
+							</div>
+
+							<div class="popular__control">
+								<button class="popular__button">
+									<img src="./img/popular/svg/add.svg" alt="add">
+								</button>
+
+								<button class="popular__button">
+									<img src="./img/popular/svg/arrow-expand.svg" alt="arrow">
+								</button>
+							</div>
+						</div>
+
+						<div class="popular__body">
+							<div class="popular__avatar">
+								<img src="./img/popular/avatar/avatar2.jpg" alt="avatar">
+
+								<img class="popular__reward-img" src="./img/popular/avatar/Avatar-icon.svg" alt="icon">
+							</div>
+
+							<div class="popular__name">Payton Harris</div>
+							
+							<div class="popular__price">2.456 <span>ETH</span></div>
+						</div>
+					</div>
+
+					<div class="popular-item">
+						<div class="popular__head">
+							<div class="popular__rating" style="background-color: #45B26B;">
+								<div class="popular__icon">
+									<img src="./img/popular/svg/rating-lightning.svg" alt="img">
+								</div>
+
+								<div class="popular__number">#3</div>
+							</div>
+
+							<div class="popular__control">
+								<button class="popular__button">
+									<img src="./img/popular/svg/add.svg" alt="add">
+								</button>
+
+								<button class="popular__button">
+									<img src="./img/popular/svg/arrow-expand.svg" alt="arrow">
+								</button>
+							</div>
+						</div>
+
+						<div class="popular__body">
+							<div class="popular__avatar">
+								<img src="./img/popular/avatar/avatar3.jpg" alt="avatar">
+
+								<img class="popular__reward-img" src="./img/popular/avatar/Avatar-icon.svg" alt="icon">
+							</div>
+
+							<div class="popular__name">Payton Harris</div>
+							
+							<div class="popular__price">2.456 <span>ETH</span></div>
+						</div>
+					</div>
+
+					<div class="popular-item">
+						<div class="popular__head">
+							<div class="popular__rating" style="background-color: #23262F;">
+								<div class="popular__icon">
+									<img src="./img/popular/svg/rating-doughnut.svg" alt="img">
+								</div>
+
+								<div class="popular__number">#4</div>
+							</div>
+
+							<div class="popular__control">
+								<button class="popular__button">
+									<img src="./img/popular/svg/add.svg" alt="add">
+								</button>
+
+								<button class="popular__button">
+									<img src="./img/popular/svg/arrow-expand.svg" alt="arrow">
+								</button>
+							</div>
+						</div>
+
+						<div class="popular__body">
+							<div class="popular__avatar">
+								<img src="./img/popular/avatar/avatar4.jpg" alt="avatar">
+
+								<img class="popular__reward-img" src="./img/popular/avatar/Avatar-icon.svg" alt="icon">
+							</div>
+
+							<div class="popular__name">Payton Harris</div>
+							
+							<div class="popular__price">2.456 <span>ETH</span></div>
+						</div>
+					</div>
+
+					<div class="popular-item">
+						<div class="popular__head">
+							<div class="popular__rating" style="background-color:#777E90;">
+								<div class="popular__icon">
+									<img src="./img/popular/svg/rating-doughnut.svg" alt="cup">
+								</div>
+
+								<div class="popular__number">#5</div>
+							</div>
+
+							<div class="popular__control">
+								<button class="popular__button">
+									<img src="./img/popular/svg/add.svg" alt="add">
+								</button>
+
+								<button class="popular__button">
+									<img src="./img/popular/svg/arrow-expand.svg" alt="arrow">
+								</button>
+							</div>
+						</div>
+
+						<div class="popular__body">
+							<div class="popular__avatar">
+								<img src="./img/popular/avatar/avatar5.jpg" alt="avatar">
+
+								<img class="popular__reward-img" src="./img/popular/avatar/Avatar-icon.svg" alt="icon">
+							</div>
+
+							<div class="popular__name">Payton Harris</div>
+							
+							<div class="popular__price">2.456 <span>ETH</span></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="popular__button-slider-container">
+					<button class="popular__button-arrow arrow-left">
+						<img class="arrow-img" src="./img/icon_svg/arrow_left.svg" alt="left">
+					</button>
+
+					<button class="popular__button-arrow arrow-right">
+						<img class="arrow-img" src="./img/icon_svg/arrow_right.svg" alt="right">
+					</button>
+				</div>
+			</div>
 		</section>
-		<section class="section-hot-bid"></section>
+<!-- ................................................hot-bid............................... -->
+		<section class="section-hot-bid">
+			<div class="hot__title-container">
+				<h2 class="section__main-title">Hot bid</h2>
 
-		<section class="section-hot-collections"></section>
+				<div class="hot__button-container">
+					<button class="hot__button-arrow arrow-left">
+						<img class="arrow-img" src="./img/icon_svg/arrow_left.svg" alt="left">
+					</button>
 
-		<section class="section-discover"></section>
+					<button class="hot__button-arrow arrow-right">
+						<img class="arrow-img" src="./img/icon_svg/arrow_right.svg" alt="right">
+					</button>
+				</div>
+			</div>
+
+			<div class="hot__collection">
+				<div class="hot__item">
+					<div class="hot__image-container">
+						<img src="./img/hot-bid/item1.jpg" alt="item">
+					</div>
+
+					<div class="hot__item-title-container">
+						<div class="hot__title-line">
+							<h3 class="hot__title">Amazing digital art</h3>
+
+							<div class="selection__price">2.45 ETH</div>
+						</div>
+					</div>
+
+					<div class="stock-line">
+						<div class="card__users">
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar1.jpg" alt="avatar">
+							</div>
+
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar2.jpg" alt="avatar">
+							</div>
+							
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar3.jpg" alt="avatar">
+							</div>
+						</div>
+
+						<div class="card__counter">3 in stock</div>
+					</div>
+
+					<div class="card__foot">
+						<div class="card__status">
+							<img src="./img/hot-bid/svg/CandlesticksUp.svg" alt="img">
+
+							<div class="card__status-text">Highest bid <span>0.001 ETH</span></div>
+						</div>
+
+						<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="hot__item">
+					<div class="hot__image-container">
+						<img src="./img/hot-bid/item2.jpg" alt="item">
+					</div>
+
+					<div class="hot__item-title-container">
+						<div class="hot__title-line">
+							<h3 class="hot__title">Amazing digital art</h3>
+
+							<div class="selection__price">2.45 ETH</div>
+						</div>
+					</div>
+
+					<div class="stock-line">
+						<div class="card__users">
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar1.jpg" alt="avatar">
+							</div>
+
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar2.jpg" alt="avatar">
+							</div>
+							
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar3.jpg" alt="avatar">
+							</div>
+						</div>
+
+						<div class="card__counter">3 in stock</div>
+					</div>
+
+					<div class="card__foot">
+						<div class="card__status">
+							<img src="./img/hot-bid/svg/CandlesticksUp.svg" alt="img">
+
+							<div class="card__status-text">Highest bid <span>0.001 ETH</span></div>
+						</div>
+
+						<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="hot__item">
+					<div class="hot__image-container">
+						<img src="./img/hot-bid/item3.jpg" alt="item">
+					</div>
+
+					<div class="hot__item-title-container">
+						<div class="hot__title-line">
+							<h3 class="hot__title">Amazing digital art</h3>
+
+							<div class="selection__price">2.45 ETH</div>
+						</div>
+					</div>
+
+					<div class="stock-line">
+						<div class="card__users">
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar1.jpg" alt="avatar">
+							</div>
+
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar2.jpg" alt="avatar">
+							</div>
+							
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar3.jpg" alt="avatar">
+							</div>
+						</div>
+
+						<div class="card__counter">3 in stock</div>
+					</div>
+
+					<div class="card__foot">
+						<div class="card__status">
+							<img src="./img/hot-bid/svg/CandlesticksUp.svg" alt="img">
+
+							<div class="card__status-text">Highest bid <span>0.001 ETH</span></div>
+						</div>
+
+						<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="hot__item">
+					<div class="hot__image-container">
+						<img src="./img/hot-bid/item4.jpg" alt="item">
+					</div>
+
+					<div class="hot__item-title-container">
+						<div class="hot__title-line">
+							<h3 class="hot__title">Amazing digital art</h3>
+
+							<div class="selection__price">2.45 ETH</div>
+						</div>
+					</div>
+
+					<div class="stock-line">
+						<div class="card__users">
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar1.jpg" alt="avatar">
+							</div>
+
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar2.jpg" alt="avatar">
+							</div>
+							
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar3.jpg" alt="avatar">
+							</div>
+						</div>
+
+						<div class="card__counter">3 in stock</div>
+					</div>
+
+					<div class="card__foot">
+						<div class="card__status">
+							<img src="./img/hot-bid/svg/CandlesticksUp.svg" alt="img">
+
+							<div class="card__status-text">Highest bid <span>0.001 ETH</span></div>
+						</div>
+
+						<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-hot-collections">
+			<div class="hot__title-container">
+				<h2 class="section__main-title">Hot collections</h2>
+
+				<div class="hot__button-container">
+					<button class="hot__button-arrow arrow-left">
+						<img class="arrow-img" src="./img/icon_svg/arrow_left.svg" alt="left">
+					</button>
+
+					<button class="hot__button-arrow arrow-right">
+						<img class="arrow-img" src="./img/icon_svg/arrow_right.svg" alt="right">
+					</button>
+				</div>
+			</div>
+
+			<div class="collections__slider">
+				<div class="collections__item">
+					<div class="collections__preview-container">
+						<div class="collections__preview">
+							<img src="./img/hot-collections/img1.1.jpg" alt="img">
+						</div>
+	
+						<div class="collections__preview">
+							<img src="./img/hot-collections/img1.2.jpg" alt="img">
+						</div>
+	
+						<div class="collections__preview">
+							<img src="./img/hot-collections/img1.3.jpg" alt="img">
+						</div>
+	
+						<div class="collections__preview">
+							<img src="./img/hot-collections/img1.4.jpg" alt="img">
+						</div>
+					</div>
+
+					<div class="collections__subtitle">Awesome collection</div>
+
+					<div class="collections__line">
+						<div class="collections__user">
+							<div class="collections__avatar">
+								<img src="./img/hot-collections/avatar.jpg" alt="avatar">
+							</div>
+
+							<div class="collections__author">By <span>Kennith Olson</span></div>
+						</div>
+
+						<div class="collections__counter">
+							<span>28 items</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="collections__item">
+					<div class="collections__preview-container">
+						<div class="collections__preview">
+							<img src="./img/hot-collections/img2.1.jpg" alt="img">
+						</div>
+	
+						<div class="collections__preview">
+							<img src="./img/hot-collections/img2.2.jpg" alt="img">
+						</div>
+	
+						<div class="collections__preview">
+							<img src="./img/hot-collections/img2.3.jpg" alt="img">
+						</div>
+	
+						<div class="collections__preview">
+							<img src="./img/hot-collections/img2.4.jpg" alt="img">
+						</div>
+					</div>
+
+					<div class="collections__subtitle">Awesome collection</div>
+
+					<div class="collections__line">
+						<div class="collections__user">
+							<div class="collections__avatar">
+								<img src="./img/hot-collections/avatar.jpg" alt="avatar">
+							</div>
+
+							<div class="collections__author">By <span>Willie Barton</span></div>
+						</div>
+
+						<div class="collections__counter">
+							<span>28 items</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="collections__item">
+					<div class="collections__preview-container">
+						<div class="collections__preview">
+							<img src="./img/hot-collections/img3.1.jpg" alt="img">
+						</div>
+	
+						<div class="collections__preview">
+							<img src="./img/hot-collections/img3.2.jpg" alt="img">
+						</div>
+	
+						<div class="collections__preview">
+							<img src="./img/hot-collections/img3.3.jpg" alt="img">
+						</div>
+	
+						<div class="collections__preview">
+							<img src="./img/hot-collections/img3.4.jpg" alt="img">
+						</div>
+					</div>
+
+					<div class="collections__subtitle">Awesome collection</div>
+
+					<div class="collections__line">
+						<div class="collections__user">
+							<div class="collections__avatar">
+								<img src="./img/hot-collections/avatar.jpg" alt="avatar">
+							</div>
+
+							<div class="collections__author">By <span>Halle Jakubowski</span></div>
+						</div>
+
+						<div class="collections__counter">
+							<span>28 items</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-discover">
+			<h2 class="section__main-title">Discover</h2>
+
+			<div class="discover__mobile-contol">
+				<div class="discover__select-container">
+					<div class="select">Recently added</div>
+
+					<button class="select__button">
+						<img src="./img/icon_svg/select_button.svg" alt="select">
+					</button>
+				</div>
+
+				<div class="discover__select-container">
+					<div class="select">Recently added</div>
+
+					<button class="select__button">
+						<img src="./img/icon_svg/select_button.svg" alt="select">
+					</button>
+				</div>
+
+				<button class="filter-button">Advanced Filter</button>
+			</div>
+
+			<div class="discover__desctop-control">
+				<div class="discover__top-control">
+					<div class="discover__select-container">
+						<div class="select">Recently added</div>
+
+						<button class="select__button">
+							<img src="./img/icon_svg/select_button.svg" alt="select">
+						</button>
+					</div>
+
+					<nav class="discover__menu-container">
+						<button type="button" class="all-items">All items</button>
+
+						<ul class="discover__menu">
+							<li><a href="#">Art</a></li>
+							<li><a href="#">Game</a></li>
+							<li><a href="#">Photography</a></li>
+							<li class="media-link"><a href="#">Music</a></li>
+							<li class="media-link"><a href="#">Video</a></li>
+						</ul>
+					</nav>
+
+					<button class="filter-button">Filter  X</button>
+				</div>
+
+				<div class="discover__filters">
+					<div class="filter__select-container">
+						<div class="select__lable">Price</div>
+
+						<div class="discover__select-container">
+							<div class="select">Highest price</div>
+
+							<button class="select__button">
+								<img src="./img/icon_svg/select_button.svg" alt="select">
+							</button>
+						</div>
+					</div>
+
+					<div class="filter__select-container">
+						<div class="select__lable">likes</div>
+						
+						<div class="discover__select-container">
+							<div class="select">Most liked</div>
+
+							<button class="select__button">
+								<img src="./img/icon_svg/select_button.svg" alt="select">
+							</button>
+						</div>
+					</div>
+
+					<div class="filter__select-container creator-select">
+						<div class="select__lable">Creator</div>
+						
+						<div class="discover__select-container">
+							<div class="select">Verified only</div>
+
+							<button class="select__button">
+								<img src="./img/icon_svg/select_button.svg" alt="select">
+							</button>
+						</div>
+					</div>
+
+					<div class="price-range-container">
+						<div class="select__range-container">
+
+							<label for="customRange1" class="select__lable">PRICE RANGE</label>
+
+							<input type="range" class="discover__range" id="customRange1">
+
+							<div class="range__indicators">
+								<div class="range__text">0.01 ETH</div>
+
+								<div class="range__text">10 ETH</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="discover__gallery-container">
+				<div class="hot__item">
+					<div class="hot__image-container">
+						<img src="./img/discover/gallery/item1.jpg" alt="item">
+					</div>
+
+					<div class="hot__item-title-container">
+						<div class="hot__title-line">
+							<h3 class="hot__title">Amazing digital art</h3>
+
+							<div class="selection__price">2.45 ETH</div>
+						</div>
+					</div>
+
+					<div class="stock-line">
+						<div class="card__users">
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar1.jpg" alt="avatar">
+							</div>
+
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar2.jpg" alt="avatar">
+							</div>
+							
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar3.jpg" alt="avatar">
+							</div>
+						</div>
+
+						<div class="card__counter">3 in stock</div>
+					</div>
+
+					<div class="card__foot">
+						<div class="card__status">
+							<img src="./img/hot-bid/svg/CandlesticksUp.svg" alt="img">
+
+							<div class="card__status-text">Highest bid <span>0.001 ETH</span></div>
+						</div>
+
+						<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="hot__item">
+					<div class="hot__image-container">
+						<img src="./img/discover/gallery/item2.jpg" alt="item">
+					</div>
+
+					<div class="hot__item-title-container">
+						<div class="hot__title-line">
+							<h3 class="hot__title">Amazing digital art</h3>
+
+							<div class="selection__price">2.45 ETH</div>
+						</div>
+					</div>
+
+					<div class="stock-line">
+						<div class="card__users">
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar1.jpg" alt="avatar">
+							</div>
+
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar2.jpg" alt="avatar">
+							</div>
+							
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar3.jpg" alt="avatar">
+							</div>
+						</div>
+
+						<div class="card__counter">3 in stock</div>
+					</div>
+
+					<div class="card__foot">
+						<div class="card__status">
+							<img src="./img/hot-bid/svg/CandlesticksUp.svg" alt="img">
+
+							<div class="card__status-text">Highest bid <span>0.001 ETH</span></div>
+						</div>
+
+						<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="hot__item">
+					<div class="hot__image-container">
+						<img src="./img/discover/gallery/item3.jpg" alt="item">
+					</div>
+
+					<div class="hot__item-title-container">
+						<div class="hot__title-line">
+							<h3 class="hot__title">Amazing digital art</h3>
+
+							<div class="selection__price">2.45 ETH</div>
+						</div>
+					</div>
+
+					<div class="stock-line">
+						<div class="card__users">
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar1.jpg" alt="avatar">
+							</div>
+
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar2.jpg" alt="avatar">
+							</div>
+							
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar3.jpg" alt="avatar">
+							</div>
+						</div>
+
+						<div class="card__counter">3 in stock</div>
+					</div>
+
+					<div class="card__foot">
+						<div class="card__status">
+							<img src="./img/hot-bid/svg/CandlesticksUp.svg" alt="img">
+
+							<div class="card__status-text">Highest bid <span>0.001 ETH</span></div>
+						</div>
+
+						<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="hot__item">
+					<div class="hot__image-container">
+						<img src="./img/discover/gallery/item4.jpg" alt="item">
+					</div>
+
+					<div class="hot__item-title-container">
+						<div class="hot__title-line">
+							<h3 class="hot__title">Amazing digital art</h3>
+
+							<div class="selection__price">2.45 ETH</div>
+						</div>
+					</div>
+
+					<div class="stock-line">
+						<div class="card__users">
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar1.jpg" alt="avatar">
+							</div>
+
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar2.jpg" alt="avatar">
+							</div>
+							
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar3.jpg" alt="avatar">
+							</div>
+						</div>
+
+						<div class="card__counter">3 in stock</div>
+					</div>
+
+					<div class="card__foot">
+						<div class="card__status">
+							<img src="./img/hot-bid/svg/CandlesticksUp.svg" alt="img">
+
+							<div class="card__status-text">Highest bid <span>0.001 ETH</span></div>
+						</div>
+
+						<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="hot__item">
+					<div class="hot__image-container">
+						<img src="./img/discover/gallery/item5.jpg" alt="item">
+					</div>
+
+					<div class="hot__item-title-container">
+						<div class="hot__title-line">
+							<h3 class="hot__title">Amazing digital art</h3>
+
+							<div class="selection__price">2.45 ETH</div>
+						</div>
+					</div>
+
+					<div class="stock-line">
+						<div class="card__users">
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar1.jpg" alt="avatar">
+							</div>
+
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar2.jpg" alt="avatar">
+							</div>
+							
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar3.jpg" alt="avatar">
+							</div>
+						</div>
+
+						<div class="card__counter">3 in stock</div>
+					</div>
+
+					<div class="card__foot">
+						<div class="card__status">
+							<img src="./img/hot-bid/svg/CandlesticksUp.svg" alt="img">
+
+							<div class="card__status-text">Highest bid <span>0.001 ETH</span></div>
+						</div>
+
+						<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="hot__item">
+					<div class="hot__image-container">
+						<img src="./img/discover/gallery/item6.jpg" alt="item">
+					</div>
+
+					<div class="hot__item-title-container">
+						<div class="hot__title-line">
+							<h3 class="hot__title">Amazing digital art</h3>
+
+							<div class="selection__price">2.45 ETH</div>
+						</div>
+					</div>
+
+					<div class="stock-line">
+						<div class="card__users">
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar1.jpg" alt="avatar">
+							</div>
+
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar2.jpg" alt="avatar">
+							</div>
+							
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar3.jpg" alt="avatar">
+							</div>
+						</div>
+
+						<div class="card__counter">3 in stock</div>
+					</div>
+
+					<div class="card__foot">
+						<div class="card__status">
+							<img src="./img/hot-bid/svg/CandlesticksUp.svg" alt="img">
+
+							<div class="card__status-text">Highest bid <span>0.001 ETH</span></div>
+						</div>
+
+						<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="hot__item">
+					<div class="hot__image-container">
+						<img src="./img/discover/gallery/item7.jpg" alt="item">
+					</div>
+
+					<div class="hot__item-title-container">
+						<div class="hot__title-line">
+							<h3 class="hot__title">Amazing digital art</h3>
+
+							<div class="selection__price">2.45 ETH</div>
+						</div>
+					</div>
+
+					<div class="stock-line">
+						<div class="card__users">
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar1.jpg" alt="avatar">
+							</div>
+
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar2.jpg" alt="avatar">
+							</div>
+							
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar3.jpg" alt="avatar">
+							</div>
+						</div>
+
+						<div class="card__counter">3 in stock</div>
+					</div>
+
+					<div class="card__foot">
+						<div class="card__status">
+							<img src="./img/hot-bid/svg/CandlesticksUp.svg" alt="img">
+
+							<div class="card__status-text">Highest bid <span>0.001 ETH</span></div>
+						</div>
+
+						<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="hot__item">
+					<div class="hot__image-container">
+						<img src="./img/discover/gallery/item8.jpg" alt="item">
+					</div>
+
+					<div class="hot__item-title-container">
+						<div class="hot__title-line">
+							<h3 class="hot__title">Amazing digital art</h3>
+
+							<div class="selection__price">2.45 ETH</div>
+						</div>
+					</div>
+
+					<div class="stock-line">
+						<div class="card__users">
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar1.jpg" alt="avatar">
+							</div>
+
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar2.jpg" alt="avatar">
+							</div>
+							
+							<div class="card__avatar">
+								<img src="./img/hot-bid/small-avatars/avatar3.jpg" alt="avatar">
+							</div>
+						</div>
+
+						<div class="card__counter">3 in stock</div>
+					</div>
+
+					<div class="card__foot">
+						<div class="card__status">
+							<img src="./img/hot-bid/svg/CandlesticksUp.svg" alt="img">
+
+							<div class="card__status-text">Highest bid <span>0.001 ETH</span></div>
+						</div>
+
+						<div class="card__bid">New bid <span role="img" aria-label="fire">🔥</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="discover__button-slider-container">
+				<button class="popular__button-arrow arrow-left">
+					<img class="arrow-img" src="./img/icon_svg/arrow_left.svg" alt="left">
+				</button>
+				
+				<button class="popular__button-arrow arrow-right">
+					<img class="arrow-img" src="./img/icon_svg/arrow_right.svg" alt="right">
+				</button>
+			</div>
+
+			<div class="button-load-more-container">
+				<button type="button" class="load-more-button">Load more</button>
+			</div>
+		</section>
 
 		<section class="section-description">
 			<div class="description__container">
@@ -290,24 +1332,71 @@
 					<h2 class="description__title">Earn free crypto with Crypter</h2>
 
 					<p class="description__text">A creative agency that lead and inspire</p>
-				</div>
 
-				<div class="d-grid gap-2 description__btns button-placebid">
-					<button class="btn btn-primary" type="button">Earn now</button>
-
-					<button type="button" class="btn btn-outline-primary">Discover more</button>
+					<div class="description__buttons-container">
+						<button type="button" class="btn btn-primary" >Earn now</button>
+	
+						<button type="button" class="btn btn-outline-primary">Discover more</button>
+					</div>
 				</div>
 
 				<div class="description__img-wrap">
-					<img class="description__img" src="./img/description.jpg" alt="image">
-				</div>
-				
-
+					<img class="description__img" src="./img/description/description.jpg" alt="image">
 				</div>
 			</div>
 		</section>
-		<footer class="footer"></footer>
+
+		<footer class="footer">
+			<div class="footer__content">
+				<div class="logo-block">
+					<div class="logo-container">
+						<a href="./index.html">
+							<img class="logo-img" src="./img/logo/logo.svg" alt="logo">
+						</a>
+					</div>
+
+					<p class="logo-text">Let’s make a great design togerther</p>
+				</div>
+
+				<div class="footer_group">
+					<div class="group-title">Crypter.</div>
+
+					<a class="footer-link" href="#">Discover</a>
+
+					<a class="footer-link" href="#">Connect wallet</a>
+
+					<a class="footer-link" href="#">Create item</a>
+				</div>
+
+				<div class="footer_group">
+					<div class="group-title">Info</div>
+
+					<a class="footer-link" href="#">Download</a>
+
+					<a class="footer-link" href="#">Demos</a>
+
+					<a class="footer-link" href="#">Support</a>
+				</div>
+
+				<div class="footer-text">
+					<h2 class="subscribe-title">Join Newsletter</h2>
+
+					<p class="subscribe-text">Subscribe our newsletter to get more free design course and resource</p>
+
+					<div class="footer-input">
+						<input class="subscription__input" type="email" name="email" placeholder="Enter your email" required="required">
+
+						<div class="circle-button">
+							<img src="./img/footer/arrow_right.svg" alt="arrow">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="copyright">
+				<p class="copyright-text">Copyright © 2021 UI8 LLC. All rights reserved</p>
+			</div>
+		</footer>
 	</div>
-	
 </body>
 </html>
